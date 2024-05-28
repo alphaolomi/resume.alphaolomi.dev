@@ -15,7 +15,7 @@ export const RESUME_DATA = {
   avatarUrl: "https://avatars.githubusercontent.com/u/10551599?v=4",
   personalWebsiteUrl: "https://alphaolomi.dev/",
   contact: {
-    email: "hello@alphaolomi.com",
+    email: "hello@alphaolomi.dev",
     tel: "+255747991498",
     social: [
       {
