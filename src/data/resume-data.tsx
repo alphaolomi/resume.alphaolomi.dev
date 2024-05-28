@@ -13,7 +13,7 @@ export const RESUME_DATA = {
   summary:
     "As a Full Stack Engineer, I have experience in building web and mobile applications.",
   avatarUrl: "https://avatars.githubusercontent.com/u/10551599?v=4",
-  personalWebsiteUrl: "https://alphaolomi.com/",
+  personalWebsiteUrl: "https://alphaolomi.dev/",
   contact: {
     email: "hello@alphaolomi.com",
     tel: "+255747991498",
