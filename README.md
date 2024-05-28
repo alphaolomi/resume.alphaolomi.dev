@@ -1,12 +1,12 @@
-# Alpha's CV
+# Alpha's Resume
 
 Simple web app that renders minimalist CV with print-friendly layout.
 
-Built with Next.js and shadcn/ui, deployed on Vercel.
+Built with Next.js and `shadcn/ui`, deployed on Vercel.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/alphaolomi/cv.git)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/alphaolomi/resume.git)
 
-# Features
+## Features
 
 - Setup only takes a few minutes [single config file](./src/data/resume-data.tsx)
 - Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS
@@ -19,13 +19,13 @@ Built with Next.js and shadcn/ui, deployed on Vercel.
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/alphaolomi/cv.git
+   git clone https://github.com/alphaolomi/resume.git
    ```
 
 2. Move to the cloned directory
 
    ```bash
-   cd cv
+   cd resume
    ```
 
 3. Install dependencies:
@@ -42,7 +42,7 @@ Built with Next.js and shadcn/ui, deployed on Vercel.
 
 5. Open the [Config file](./src/data/resume-data.tsx) and make changes
 
-# Run with Docker
+## Run with Docker
 
 Build the container
 
@@ -64,7 +64,7 @@ docker compose down
 
 ## Credits
 
-- [Bartosz Jarocki](https://github.com/BartoszJarocki/cv)
+- Original work from [BartoszJarocki/cv](https://github.com/BartoszJarocki/cv)
 
 # License
 
