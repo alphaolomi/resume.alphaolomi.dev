@@ -1,71 +1,79 @@
 # Alpha's Resume
 
-Simple web app that renders minimalist CV with print-friendly layout.
+<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falphaolomi%2Fresume.alphaolomi.dev">
+  <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+</a>
 
-Built with Next.js and `shadcn/ui`, deployed on Vercel.
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/alphaolomi/resume.git)
+Personal, print-friendly CV website for **Alpha Olomi**, built with Next.js, TypeScript, and Tailwind CSS.
 
-## Features
+- Live site: `https://resume.alphaolomi.dev`
+- Repository: `https://github.com/alphaolomi/resume.alphaolomi.dev`
 
-- Setup only takes a few minutes [single config file](./src/data/resume-data.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS
-- Auto generated Layout
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+## Quick Start
 
-# Usage
+```bash
+git clone https://github.com/alphaolomi/resume.alphaolomi.dev
+cd resume.alphaolomi.dev
+pnpm install
+pnpm dev
+```
 
-1. Clone this repository to your local machine:
+Open `http://localhost:3000`.
 
-   ```bash
-   git clone https://github.com/alphaolomi/resume.git
-   ```
+## Configuration
 
-2. Move to the cloned directory
+All resume content is managed in one file:
 
-   ```bash
-   cd resume
-   ```
+`src/data/resume-data.ts`
 
-3. Install dependencies:
+Update your profile details, contact links, work history, education, skills, and projects there.
 
-   ```bash
-   pnpm install
-   ```
+## Scripts
 
-4. Start the local Server:
+```bash
+pnpm dev          # start development server
+pnpm build        # build for production
+pnpm start        # start production server
+pnpm lint         # run biome linting checks
+pnpm lint:fix     # run biome linting with auto-fix
+pnpm format       # check code formatting with biome
+pnpm format:fix   # format code with biome
+pnpm check        # run lint + format checks
+pnpm check:fix    # run lint + format auto-fix
+```
 
-   ```bash
-   pnpm dev
-   ```
+## Project Structure
 
-5. Open the [Config file](./src/data/resume-data.tsx) and make changes
+```txt
+src/
+├── app/                # Next.js App Router pages/layout
+│   └── components/     # page-level resume sections
+├── components/         # shared UI and icon components
+├── data/               # resume data source
+└── lib/                # types and utilities
+```
 
-## Run with Docker
+## Styling
 
-Build the container
+- Tailwind theme/config: `tailwind.config.js`
+- Global styles: `src/app/globals.css`
+
+## Docker
 
 ```bash
 docker compose build
-```
-
-Run the container
-
-```bash
 docker compose up -d
+docker compose down
 ```
 
-Stop the Container
+## License
 
-```bash
-docker compose down 
-```
+MIT
 
 ## Credits
 
-- Original work from [BartoszJarocki/cv](https://github.com/BartoszJarocki/cv)
-
-# License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+- Original template and inspiration: [BartoszJarocki/cv](https://github.com/BartoszJarocki/cv.git)

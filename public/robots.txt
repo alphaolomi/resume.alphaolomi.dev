@@ -1,0 +1,13 @@
+# Robots.txt for https://alphaolomi.dev
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /graphql
+
+# Sitemap location
+Sitemap: https://alphaolomi.dev/sitemap.xml
+
+# Crawl-delay for responsible crawling
+Crawl-delay: 1
